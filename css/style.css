@@ -1,0 +1,44 @@
+/* general */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* header */
+.header {
+  height: 60px;
+  background-color: red;
+}
+
+/* main */
+.main {
+  height: calc(100vh - 60px - 80px);
+  background-color: blue;
+}
+
+/* footer */
+.footer {
+  height: 80px;
+  background-color: pink;
+}
+
+.country {
+  height: 40px;
+  background-color: green;
+}
+
+.about {
+  height: 40px;
+  background-color: yellow;
+}
