@@ -6,13 +6,8 @@
 }
 
 body {
-  font-size: 16px;
-}
-
-.clearfix::after {
-  content: '';
-  display: table;
-  clear: both;
+  min-width: 1024px;
+  font-size: 14px;
 }
 
 /* header */
@@ -50,17 +45,17 @@ body {
   background-color: yellow;
 }
 
-.box_main .logo {
+.logo {
   margin: auto;
 }
 
-.box_main .search {
+.search {
   display: inline-block;
   position: relative;
   margin: auto;
 }
 
-.box_main .search::before {
+.search::before {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -71,11 +66,21 @@ body {
   background-color: red;
 }
 
-.box_main .search input {
+.search input {
   width: 550px;
   height: 36px;
   padding: 5px 30px;
   border-radius: 26px;
+}
+
+.box_btn {
+  margin: 20px 0;
+}
+
+.btn {
+  margin: 0 10px;
+  padding: 10px;
+  background-color: grey;
 }
 
 /* footer */
