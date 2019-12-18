@@ -13,7 +13,6 @@ body {
 /* header */
 .header {
   height: 60px;
-  background-color: red;
 }
 
 .nav_bar {
@@ -29,11 +28,35 @@ body {
   margin: 0 12px;
 }
 
+.nav_bar a {
+  text-decoration: none;
+  color: grey;
+}
+
+.nav_bar a:hover {
+  text-decoration: underline;
+}
+
+.nav_bar .btn_square {
+  font-size: 22px;
+}
+
+.nav_bar .btn_sign_in {
+  background-color: #4285f4;
+  padding: 10px 15px;
+  border-radius: 3px;
+  font-weight: 700;
+  color: white;
+}
+
+.nav_bar .btn_sign_in:hover {
+  text-decoration: none;
+}
+
 /* main */
 .main {
   position: relative;
   height: calc(100vh - 60px - 80px);
-  background-color: blue;
 }
 
 .box_main {
@@ -42,11 +65,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  background-color: yellow;
 }
 
 .logo {
-  margin: auto;
+  margin: 20px auto;
 }
 
 .search {
@@ -60,10 +82,10 @@ body {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-  content: '';
-  width: 10px;
-  height: 10px;
-  background-color: red;
+  content: '\f002';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: grey;
 }
 
 .search input {
@@ -74,19 +96,52 @@ body {
 }
 
 .box_btn {
-  margin: 20px 0;
+  margin: 40px 0 30px 0;
 }
 
-.btn {
-  margin: 0 10px;
+.btn_search {
+  margin: 0 5px;
+  border: 1px solid #f2f2f2;
   padding: 10px;
-  background-color: grey;
+  background-color: #f2f2f2;
+  text-decoration: none;
+  color: #5F6368;
+}
+
+.btn_search:hover {
+  border: 1px solid grey;
+  color: #000000;
+}
+
+.box_main h5 a {
+  text-decoration: none;
+  color: blue;
+}
+
+.box_main h5 a:hover {
+  text-decoration: underline;
 }
 
 /* footer */
 .footer {
   height: 80px;
-  background-color: pink;
+  background-color: #f2f2f2;
+  text-decoration: none;
+  color: #5F6368;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #5F6368;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.country,
+.about {
+  border-top: 1px solid rgba(95, 99, 104, 0.25);
 }
 
 .country {
@@ -94,7 +149,6 @@ body {
   align-items: center;
   height: 40px;
   padding: 0 24px;
-  background-color: green;
 }
 
 .about {
@@ -103,5 +157,12 @@ body {
   align-items: center;
   height: 40px;
   padding: 0 24px;
-  background-color: yellow;
+}
+
+.about .sx a {
+  margin-right: 10px;
+}
+
+.about .dx a {
+  margin-left: 10px;
 }
